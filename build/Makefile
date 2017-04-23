@@ -48,10 +48,10 @@ RM = /usr/local/Cellar/cmake/3.7.2/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/valerie/Documents/programmiersprachen-aufgabe-1
+CMAKE_SOURCE_DIR = /Users/valerie/documents/programmiersprachen-aufgabe-1
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/valerie/Documents/programmiersprachen-aufgabe-1/build
+CMAKE_BINARY_DIR = /Users/valerie/documents/programmiersprachen-aufgabe-1/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/valerie/Documents/programmiersprachen-aufgabe-1/build/CMakeFiles /Users/valerie/Documents/programmiersprachen-aufgabe-1/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/valerie/documents/programmiersprachen-aufgabe-1/build/CMakeFiles /Users/valerie/documents/programmiersprachen-aufgabe-1/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/valerie/Documents/programmiersprachen-aufgabe-1/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/valerie/documents/programmiersprachen-aufgabe-1/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -109,6 +109,19 @@ preinstall/fast:
 depend:
 	$(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
+
+#=============================================================================
+# Target rules for targets named mileToKilometer
+
+# Build rule for target.
+mileToKilometer: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 mileToKilometer
+.PHONY : mileToKilometer
+
+# fast build rule for target.
+mileToKilometer/fast:
+	$(MAKE) -f source/CMakeFiles/mileToKilometer.dir/build.make source/CMakeFiles/mileToKilometer.dir/build
+.PHONY : mileToKilometer/fast
 
 #=============================================================================
 # Target rules for targets named tests
@@ -144,6 +157,7 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... mileToKilometer"
 	@echo "... tests"
 	@echo "... helloworld"
 .PHONY : help

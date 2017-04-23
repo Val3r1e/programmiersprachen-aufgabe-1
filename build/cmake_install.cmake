@@ -1,4 +1,4 @@
-# Install script for directory: /Users/valerie/Documents/programmiersprachen-aufgabe-1
+# Install script for directory: /Users/valerie/documents/programmiersprachen-aufgabe-1
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -29,7 +29,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/Users/valerie/Documents/programmiersprachen-aufgabe-1/build/source/cmake_install.cmake")
+  include("/Users/valerie/documents/programmiersprachen-aufgabe-1/build/source/cmake_install.cmake")
 
 endif()
 
@@ -41,5 +41,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/valerie/Documents/programmiersprachen-aufgabe-1/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/valerie/documents/programmiersprachen-aufgabe-1/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

@@ -48,10 +48,10 @@ RM = /usr/local/Cellar/cmake/3.7.2/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/valerie/Documents/programmiersprachen-aufgabe-1
+CMAKE_SOURCE_DIR = /Users/valerie/documents/programmiersprachen-aufgabe-1
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/valerie/Documents/programmiersprachen-aufgabe-1/build
+CMAKE_BINARY_DIR = /Users/valerie/documents/programmiersprachen-aufgabe-1/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /Users/valerie/Documents/programmiersprachen-aufgabe-1/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/valerie/Documents/programmiersprachen-aufgabe-1/build/CMakeFiles /Users/valerie/Documents/programmiersprachen-aufgabe-1/build/source/CMakeFiles/progress.marks
-	cd /Users/valerie/Documents/programmiersprachen-aufgabe-1/build && $(MAKE) -f CMakeFiles/Makefile2 source/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/valerie/Documents/programmiersprachen-aufgabe-1/build/CMakeFiles 0
+	cd /Users/valerie/documents/programmiersprachen-aufgabe-1/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/valerie/documents/programmiersprachen-aufgabe-1/build/CMakeFiles /Users/valerie/documents/programmiersprachen-aufgabe-1/build/source/CMakeFiles/progress.marks
+	cd /Users/valerie/documents/programmiersprachen-aufgabe-1/build && $(MAKE) -f CMakeFiles/Makefile2 source/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/valerie/documents/programmiersprachen-aufgabe-1/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /Users/valerie/Documents/programmiersprachen-aufgabe-1/build && $(MAKE) -f CMakeFiles/Makefile2 source/clean
+	cd /Users/valerie/documents/programmiersprachen-aufgabe-1/build && $(MAKE) -f CMakeFiles/Makefile2 source/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,22 +97,37 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /Users/valerie/Documents/programmiersprachen-aufgabe-1/build && $(MAKE) -f CMakeFiles/Makefile2 source/preinstall
+	cd /Users/valerie/documents/programmiersprachen-aufgabe-1/build && $(MAKE) -f CMakeFiles/Makefile2 source/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /Users/valerie/Documents/programmiersprachen-aufgabe-1/build && $(MAKE) -f CMakeFiles/Makefile2 source/preinstall
+	cd /Users/valerie/documents/programmiersprachen-aufgabe-1/build && $(MAKE) -f CMakeFiles/Makefile2 source/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /Users/valerie/Documents/programmiersprachen-aufgabe-1/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /Users/valerie/documents/programmiersprachen-aufgabe-1/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
+source/CMakeFiles/mileToKilometer.dir/rule:
+	cd /Users/valerie/documents/programmiersprachen-aufgabe-1/build && $(MAKE) -f CMakeFiles/Makefile2 source/CMakeFiles/mileToKilometer.dir/rule
+.PHONY : source/CMakeFiles/mileToKilometer.dir/rule
+
+# Convenience name for target.
+mileToKilometer: source/CMakeFiles/mileToKilometer.dir/rule
+
+.PHONY : mileToKilometer
+
+# fast build rule for target.
+mileToKilometer/fast:
+	cd /Users/valerie/documents/programmiersprachen-aufgabe-1/build && $(MAKE) -f source/CMakeFiles/mileToKilometer.dir/build.make source/CMakeFiles/mileToKilometer.dir/build
+.PHONY : mileToKilometer/fast
+
+# Convenience name for target.
 source/CMakeFiles/tests.dir/rule:
-	cd /Users/valerie/Documents/programmiersprachen-aufgabe-1/build && $(MAKE) -f CMakeFiles/Makefile2 source/CMakeFiles/tests.dir/rule
+	cd /Users/valerie/documents/programmiersprachen-aufgabe-1/build && $(MAKE) -f CMakeFiles/Makefile2 source/CMakeFiles/tests.dir/rule
 .PHONY : source/CMakeFiles/tests.dir/rule
 
 # Convenience name for target.
@@ -122,12 +137,12 @@ tests: source/CMakeFiles/tests.dir/rule
 
 # fast build rule for target.
 tests/fast:
-	cd /Users/valerie/Documents/programmiersprachen-aufgabe-1/build && $(MAKE) -f source/CMakeFiles/tests.dir/build.make source/CMakeFiles/tests.dir/build
+	cd /Users/valerie/documents/programmiersprachen-aufgabe-1/build && $(MAKE) -f source/CMakeFiles/tests.dir/build.make source/CMakeFiles/tests.dir/build
 .PHONY : tests/fast
 
 # Convenience name for target.
 source/CMakeFiles/helloworld.dir/rule:
-	cd /Users/valerie/Documents/programmiersprachen-aufgabe-1/build && $(MAKE) -f CMakeFiles/Makefile2 source/CMakeFiles/helloworld.dir/rule
+	cd /Users/valerie/documents/programmiersprachen-aufgabe-1/build && $(MAKE) -f CMakeFiles/Makefile2 source/CMakeFiles/helloworld.dir/rule
 .PHONY : source/CMakeFiles/helloworld.dir/rule
 
 # Convenience name for target.
@@ -137,7 +152,7 @@ helloworld: source/CMakeFiles/helloworld.dir/rule
 
 # fast build rule for target.
 helloworld/fast:
-	cd /Users/valerie/Documents/programmiersprachen-aufgabe-1/build && $(MAKE) -f source/CMakeFiles/helloworld.dir/build.make source/CMakeFiles/helloworld.dir/build
+	cd /Users/valerie/documents/programmiersprachen-aufgabe-1/build && $(MAKE) -f source/CMakeFiles/helloworld.dir/build.make source/CMakeFiles/helloworld.dir/build
 .PHONY : helloworld/fast
 
 helloworld.o: helloworld.cpp.o
@@ -146,7 +161,7 @@ helloworld.o: helloworld.cpp.o
 
 # target to build an object file
 helloworld.cpp.o:
-	cd /Users/valerie/Documents/programmiersprachen-aufgabe-1/build && $(MAKE) -f source/CMakeFiles/helloworld.dir/build.make source/CMakeFiles/helloworld.dir/helloworld.cpp.o
+	cd /Users/valerie/documents/programmiersprachen-aufgabe-1/build && $(MAKE) -f source/CMakeFiles/helloworld.dir/build.make source/CMakeFiles/helloworld.dir/helloworld.cpp.o
 .PHONY : helloworld.cpp.o
 
 helloworld.i: helloworld.cpp.i
@@ -155,7 +170,7 @@ helloworld.i: helloworld.cpp.i
 
 # target to preprocess a source file
 helloworld.cpp.i:
-	cd /Users/valerie/Documents/programmiersprachen-aufgabe-1/build && $(MAKE) -f source/CMakeFiles/helloworld.dir/build.make source/CMakeFiles/helloworld.dir/helloworld.cpp.i
+	cd /Users/valerie/documents/programmiersprachen-aufgabe-1/build && $(MAKE) -f source/CMakeFiles/helloworld.dir/build.make source/CMakeFiles/helloworld.dir/helloworld.cpp.i
 .PHONY : helloworld.cpp.i
 
 helloworld.s: helloworld.cpp.s
@@ -164,8 +179,35 @@ helloworld.s: helloworld.cpp.s
 
 # target to generate assembly for a file
 helloworld.cpp.s:
-	cd /Users/valerie/Documents/programmiersprachen-aufgabe-1/build && $(MAKE) -f source/CMakeFiles/helloworld.dir/build.make source/CMakeFiles/helloworld.dir/helloworld.cpp.s
+	cd /Users/valerie/documents/programmiersprachen-aufgabe-1/build && $(MAKE) -f source/CMakeFiles/helloworld.dir/build.make source/CMakeFiles/helloworld.dir/helloworld.cpp.s
 .PHONY : helloworld.cpp.s
+
+mileToKilometer.o: mileToKilometer.cpp.o
+
+.PHONY : mileToKilometer.o
+
+# target to build an object file
+mileToKilometer.cpp.o:
+	cd /Users/valerie/documents/programmiersprachen-aufgabe-1/build && $(MAKE) -f source/CMakeFiles/mileToKilometer.dir/build.make source/CMakeFiles/mileToKilometer.dir/mileToKilometer.cpp.o
+.PHONY : mileToKilometer.cpp.o
+
+mileToKilometer.i: mileToKilometer.cpp.i
+
+.PHONY : mileToKilometer.i
+
+# target to preprocess a source file
+mileToKilometer.cpp.i:
+	cd /Users/valerie/documents/programmiersprachen-aufgabe-1/build && $(MAKE) -f source/CMakeFiles/mileToKilometer.dir/build.make source/CMakeFiles/mileToKilometer.dir/mileToKilometer.cpp.i
+.PHONY : mileToKilometer.cpp.i
+
+mileToKilometer.s: mileToKilometer.cpp.s
+
+.PHONY : mileToKilometer.s
+
+# target to generate assembly for a file
+mileToKilometer.cpp.s:
+	cd /Users/valerie/documents/programmiersprachen-aufgabe-1/build && $(MAKE) -f source/CMakeFiles/mileToKilometer.dir/build.make source/CMakeFiles/mileToKilometer.dir/mileToKilometer.cpp.s
+.PHONY : mileToKilometer.cpp.s
 
 tests.o: tests.cpp.o
 
@@ -173,7 +215,7 @@ tests.o: tests.cpp.o
 
 # target to build an object file
 tests.cpp.o:
-	cd /Users/valerie/Documents/programmiersprachen-aufgabe-1/build && $(MAKE) -f source/CMakeFiles/tests.dir/build.make source/CMakeFiles/tests.dir/tests.cpp.o
+	cd /Users/valerie/documents/programmiersprachen-aufgabe-1/build && $(MAKE) -f source/CMakeFiles/tests.dir/build.make source/CMakeFiles/tests.dir/tests.cpp.o
 .PHONY : tests.cpp.o
 
 tests.i: tests.cpp.i
@@ -182,7 +224,7 @@ tests.i: tests.cpp.i
 
 # target to preprocess a source file
 tests.cpp.i:
-	cd /Users/valerie/Documents/programmiersprachen-aufgabe-1/build && $(MAKE) -f source/CMakeFiles/tests.dir/build.make source/CMakeFiles/tests.dir/tests.cpp.i
+	cd /Users/valerie/documents/programmiersprachen-aufgabe-1/build && $(MAKE) -f source/CMakeFiles/tests.dir/build.make source/CMakeFiles/tests.dir/tests.cpp.i
 .PHONY : tests.cpp.i
 
 tests.s: tests.cpp.s
@@ -191,7 +233,7 @@ tests.s: tests.cpp.s
 
 # target to generate assembly for a file
 tests.cpp.s:
-	cd /Users/valerie/Documents/programmiersprachen-aufgabe-1/build && $(MAKE) -f source/CMakeFiles/tests.dir/build.make source/CMakeFiles/tests.dir/tests.cpp.s
+	cd /Users/valerie/documents/programmiersprachen-aufgabe-1/build && $(MAKE) -f source/CMakeFiles/tests.dir/build.make source/CMakeFiles/tests.dir/tests.cpp.s
 .PHONY : tests.cpp.s
 
 # Help Target
@@ -202,11 +244,15 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... mileToKilometer"
 	@echo "... tests"
 	@echo "... helloworld"
 	@echo "... helloworld.o"
 	@echo "... helloworld.i"
 	@echo "... helloworld.s"
+	@echo "... mileToKilometer.o"
+	@echo "... mileToKilometer.i"
+	@echo "... mileToKilometer.s"
 	@echo "... tests.o"
 	@echo "... tests.i"
 	@echo "... tests.s"
@@ -221,6 +267,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /Users/valerie/Documents/programmiersprachen-aufgabe-1/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /Users/valerie/documents/programmiersprachen-aufgabe-1/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 
